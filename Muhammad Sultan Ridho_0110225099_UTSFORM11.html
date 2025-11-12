@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Periksa Kesehatan Gigi</title>
+    <link rel="stylesheet" href="Muhammad Sultan Ridho_0110225099_UTSFORM11.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Booking Periksa Kesehatan Gigi</h1>
+        <form action="#" method="POST">
+            
+            <div class="form-group">
+                <label for="nama_pasien">Nama Pasien</label>
+                <input type="text" id="nama_pasien" name="nama_pasien" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal_periksa">Tanggal Periksa</label>
+                <input type="date" id="tanggal_periksa" name="tanggal_periksa" required>
+            </div>
+
+            <div class="form-group">
+                <label for="umur">Umur</label>
+                <input type="number" id="umur" name="umur" min="1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="telpon_hp">Telpon/HP</label>
+                <input type="tel" id="telpon_hp" name="telpon_hp" pattern="[0-9]{10,15}" title="Nomor telepon harus terdiri dari 10 sampai 15 digit angka." required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="pilih_dokter">Pilih Dokter</label>
+                <select id="pilih_dokter" name="pilih_dokter" required>
+                    <option value="" disabled selected>Pilih Dokter</option>
+                    <option value="drg_amelia">Drg. Amelia</option>
+                    <option value="drg_budi">Drg. Budi</option>
+                    <option value="drg_citra">Drg. Citra</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="pilih_layanan">Pilih Layanan</label>
+                <select id="pilih_layanan" name="pilih_layanan" required>
+                    <option value="" disabled selected>Pilih Layanan</option>
+                    <option value="perawatan_gigi_anak">Perawatan Gigi Anak</option>
+                    <option value="pembersihan_karang">Pembersihan Karang Gigi</option>
+                    <option value="tambal_gigi">Tambal Gigi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="keluhan">Keluhan</label>
+                <input type="text" id="keluhan" name="keluhan">
+            </div>
+
+            <div class="form-group payment-options">
+                <label>Pembayaran</label>
+                <div>
+                    <input type="radio" id="cash" name="pembayaran" value="Cash" required>
+                    <label for="cash">Cash</label>
+
+                    <input type="radio" id="transfer" name="pembayaran" value="Transfer">
+                    <label for="transfer">Transfer</label>
+
+                    <input type="radio" id="ewallet" name="pembayaran" value="eWallet">
+                    <label for="ewallet">eWallet</label>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="submit-btn">Submit</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+  </html>
+  
