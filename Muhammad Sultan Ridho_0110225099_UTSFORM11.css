@@ -1,0 +1,117 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border: 1px solid #ccc; 
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee; 
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; 
+    margin-right: 20px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group input[type="date"],
+.form-group select {
+    flex-grow: 1; 
+    padding: 8px 10px;
+    border: 1px solid #000; 
+    border-radius: 0; 
+    box-sizing: border-box;
+    max-width: 400px; 
+}
+
+
+.form-group:nth-child(4) input[type="text"] {
+    max-width: 100%; 
+}
+
+.payment-options {
+    align-items: flex-start; 
+}
+
+.payment-options > div {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.payment-options input[type="radio"] {
+    margin-right: 5px;
+}
+
+.payment-options label {
+    font-weight: normal;
+    width: auto;
+    margin-right: 0;
+}
+
+
+.button-group {
+    display: flex;
+    justify-content: flex-start; 
+    margin-top: 30px;
+    padding-left: 170px; 
+    gap: 15px;
+}
+
+.button-group button {
+    padding: 8px 25px;
+    border: 1px solid #000;
+    border-radius: 0;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.submit-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+.reset-btn {
+    background-color: #fff;
+    color: #000;
+}
+
+
+.form-group input[type="date"] {
+    
+    background-color: #fff; 
+}
+

@@ -1,2 +1,0 @@
-# UTS-UI-UX
-UTS-UI-UX
